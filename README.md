@@ -15,7 +15,6 @@ During preprocessing, categorical data was converted to numeric values using the
 The model was then built, focusing on optimizing three key parameters: the number of units, the choice of optimizers, and the activation functions for hidden layers. The model's performance was assessed using loss and accuracy metrics on the training, validation, and testing datasets, along with confusion matrices and classification reports.
 
 ### Optimizers
-
 Four different optimizers were used to determine which would be the best. The optimizers used were Adam, SDG, Adagrad, RMSProp. These optimizers were selected because they are typically used for classification models. <br>
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Optimizer%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Per Optimizers Training Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Optimizer%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Per Optimizer Validation Data" width="500">
@@ -36,8 +35,7 @@ The poorest performing optimizer for both validation and training data was Adagr
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Neurons%20Validation%20Data.png?raw=true" alt="Loss vs Epoch Per Neurons Validation Data" width="500">
 
 
-### Activation Function
-
+### Activation Functions
 Four different activation functions were used to determine which would be the best. The activation functions used were ReLU, LeakyReLU, PReLU, Swish. <br>
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Activation%20Function%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Per Activation Function Training Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Activation%20Function%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Per Activation Function Validation Data" width="500">
@@ -48,7 +46,11 @@ When comparing the accuracy and loss values across training and validation data,
 Ultimately, the Swish activation function was chosen for the final model because it produced the lowest loss and highest accuracy. That said, any of the activation functions used could be effective, yielding relatively low loss and high accuracy values.
 
 ### Final Model
-The final model used the Adam optimizer, Swish activation functions, and had hidden layers structured with 64, 32, 16, and 8 neurons, respectively. It was trained for 20 epochs, rather than 50, as longer training resulted in noticeable overfitting on the training data. Twenty epochs were selected because the accuracy and loss values on the validation data did not show significant improvement beyond this point. The testing data achieved a loss value of 0.25 and an accuracy of 0.90, which showed little significant improvement over many other optimization models.
+The final model used the Adam optimizer, Swish activation functions, and had hidden layers structured with 64, 32, 16, and 8 neurons, respectively. It was trained for 20 epochs, rather than 50, as longer training resulted in noticeable overfitting on the training data. Twenty epochs were selected because the accuracy and loss values on the validation data did not show significant improvement beyond this point. The testing data achieved a loss value of 0.25 and an accuracy of 0.90, which showed little significant improvement over many other optimization models.<br>
+<img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Final%20Model%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500">
+<img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Final%20Model%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500">
+<img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Final%20Model%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500">
+<img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Final%20Model%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500">
 
 ## Presentation
 https://docs.google.com/presentation/d/1gQU2lVztwKqTSSP8K1pZRyy6yLw16d4R6ynC-JBgMgI/edit?usp=sharing
