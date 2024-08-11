@@ -14,5 +14,30 @@ During preprocessing, categorical data was converted to numeric values using the
 ## Model Optimization
 The model was then built, focusing on optimizing three key parameters: the number of units, the choice of optimizers, and the activation functions for hidden layers. The model's performance was assessed using loss and accuracy metrics on the training, validation, and testing datasets, along with confusion matrices and classification reports.
 
+### Optimizers
+
+Four different optimizers were used to determine which would be the best. The optimizers used were Adam, SDG, Adagrad, RMSProp. <br>
+
+![Accuracy vs Epoch Per Optimizers Training Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Optimizer%20Training%20Data.png?raw=true)
+![Accuracy vs Epoch Per Optimizer Validation Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Optimizer%20Validation%20Data.png?raw=true)
+![Loss vs Epoch Per Optimizer Training Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Optimizer%20Training%20Data.png?raw=true)
+![Loss vs Epoch Per Optimizer Validation Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Optimizer%20Validation%20Data.png?raw=true)
+
+### Neurons
+
+
+![Accuracy vs Epoch Per Neurons Training Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Neurons%20Training%20Data.png?raw=true)
+![Accuracy vs Epoch Per Neurons Validation Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Neurons%20Validation%20Data.png?raw=true)
+![Loss vs Epoch Per Neurons Training Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Neurons%20Training%20Data.png?raw=true)
+![Loss vs Epoch Per Neurons Validation Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Neurons%20Validation%20Data.png?raw=true)
+
+### Activation Function
+
+Four different activation functions were used to determine which would be the best. The activation functions used were ReLU, LeakyReLU, PReLU, Swish. <br>
+![Accuracy vs Epoch Per Activation Function Training Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Activation%20Function%20Training%20Data.png?raw=true)
+![Accuracy vs Epoch Per Activation Function Validation Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Activation%20Function%20Validation%20Data.png?raw=true)
+![Loss vs Epoch Per Activation Function Validation Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Activation%20Function%20Validation%20Data.png?raw=true)
+![Loss vs Epoch Per Activation Function Training Data](https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Activation%20Function%20Training%20Data.png?raw=true)
+
 ## Presentation
 https://docs.google.com/presentation/d/1gQU2lVztwKqTSSP8K1pZRyy6yLw16d4R6ynC-JBgMgI/edit?usp=sharing
