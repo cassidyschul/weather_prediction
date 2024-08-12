@@ -29,7 +29,7 @@ The poorest performing optimizer for both validation and training data was Adagr
 ### Neurons
 Four different neural network architectures were used to evaluate and identify the best configuration of neurons in the hidden layers. The architectures tested were simpler (64, 32, 16, 8), balanced (128, 64, 32, 16), deeper (256, 128, 64, 32), and inverted pyramid (32, 64, 128, 256). <br>
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Neurons%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Per Neurons Training Data" width="500">
-<img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Neurons%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Per Neurons Validation Data" width="500">
+<img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Neurons%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Per Neurons Validation Data" width="500"><br>
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Neurons%20Training%20Data.png?raw=true" alt="Loss vs Epoch Per Neurons Training Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Neurons%20Validation%20Data.png?raw=true" alt="Loss vs Epoch Per Neurons Validation Data" width="500">
 
@@ -39,7 +39,7 @@ Among these distinct neural network architectures, the simpler architecture achi
 Four different activation functions were used to determine which would be the best. The activation functions used were ReLU, LeakyReLU, PReLU, Swish. ReLU was selected because it is the most widely used activation function. LeakyReLU, PReLU, and Swish were selected because they can offer slight enhancements to ReLU.
 <br>
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Activation%20Function%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Per Activation Function Training Data" width="500">
-<img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Activation%20Function%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Per Activation Function Validation Data" width="500">
+<img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Activation%20Function%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Per Activation Function Validation Data" width="500"><br>
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Activation%20Function%20Training%20Data.png?raw=true" alt="Loss vs Epoch Per Activation Function Training Data" width="500"><img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Activation%20Function%20Validation%20Data.png?raw=true" alt="Loss vs Epoch Per Activation Function Validation Data" width="500">
 
 When comparing the accuracy and loss values across training and validation data, all activation functions performed similarly. However, the validation data showed noticeable fluctuations in loss and accuracy, which could indicate potential overfitting. 
@@ -49,7 +49,7 @@ Ultimately, the Swish activation function was chosen for the final model because
 ### Final Model
 The final model used the Adam optimizer, Swish activation functions, and had hidden layers structured with a simple architecture, 64, 32, 16, and 8 neurons, respectively. It was trained for 20 epochs, rather than 50, as longer training resulted in noticeable overfitting on the training data. Twenty epochs were selected because the accuracy and loss values on the validation data did not show significant improvement beyond this point. The testing data achieved a loss value of 0.25 and an accuracy of 0.90, which showed little significant improvement over many other optimization models.<br>
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Final%20Model%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500">
-<img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Final%20Model%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500">
+<img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Final%20Model%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500"><br>
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Final%20Model%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Final%20Model%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500">
 
