@@ -27,27 +27,28 @@ The poorest performing optimizer for both validation and training data was Adagr
 
 
 ### Neurons
-Four different neural network architectures were used to evaluate and identify the best configuration of neurons in the hidden layers. The architecures tested were Simpler, Balanced, Deeper, and Inverted Pyramid. 
+Four different neural network architectures were used to evaluate and identify the best configuration of neurons in the hidden layers. The architectures tested were Simpler, Balanced, Deeper, and Inverted Pyramid. 
 
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Neurons%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Per Neurons Training Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Neurons%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Per Neurons Validation Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Neurons%20Training%20Data.png?raw=true" alt="Loss vs Epoch Per Neurons Training Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Neurons%20Validation%20Data.png?raw=true" alt="Loss vs Epoch Per Neurons Validation Data" width="500">
 
-Among these distnict neural network architectures, the Simpler architecture achieved the highest accuracy with the lowest loss. In contrast, the Balanced architecture showed the next best performance, followed by the Inverted Pyramid, and finally, Deeper architrectures demonstrated lower accuracy with higher loss. Therefore, the Simpler architecture was selected for final optimization. 
+Among these distinct neural network architectures, the Simpler architecture achieved the highest accuracy with the lowest loss. In contrast, the Balanced architecture showed the next best performance, followed by the Inverted Pyramid, and finally, Deeper architrectures demonstrated lower accuracy with higher loss. Therefore, the Simpler architecture was selected for final optimization. 
 
 ### Activation Functions
-Four different activation functions were used to determine which would be the best. The activation functions used were ReLU, LeakyReLU, PReLU, Swish. <br>
+Four different activation functions were used to determine which would be the best. The activation functions used were ReLU, LeakyReLU, PReLU, Swish. ReLU was selected because it is the most widely used activation function. LeakyReLU, PReLU, and Swish were selected because they can offer slight enhancements to ReLU
+<br>
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Activation%20Function%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Per Activation Function Training Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Activation%20Function%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Per Activation Function Validation Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Activation%20Function%20Training%20Data.png?raw=true" alt="Loss vs Epoch Per Activation Function Training Data" width="500"><img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Activation%20Function%20Validation%20Data.png?raw=true" alt="Loss vs Epoch Per Activation Function Validation Data" width="500">
 
 When comparing the accuracy and loss values across training and validation data, all activation functions performed similarly. However, the validation data showed noticeable fluctuations in loss and accuracy, which could indicate potential overfitting. 
 
-Ultimately, the Swish activation function was chosen for the final model because it produced the lowest loss and highest accuracy. That said, any of the activation functions used could be effective, yielding relatively low loss and high accuracy values.
+Ultimately, the Swish activation function was chosen for the final model because it produced the lowest loss and highest accuracy in the validation data. That said, any of the activation functions used could be effective, yielding relatively low loss and high accuracy values.
 
 ### Final Model
-The final model used the Adam optimizer, Swish activation functions, and had hidden layers structured with 64, 32, 16, and 8 neurons, respectively. It was trained for 20 epochs, rather than 50, as longer training resulted in noticeable overfitting on the training data. Twenty epochs were selected because the accuracy and loss values on the validation data did not show significant improvement beyond this point. The testing data achieved a loss value of 0.25 and an accuracy of 0.90, which showed little significant improvement over many other optimization models.<br>
+The final model used the Adam optimizer, Swish activation functions, and had hidden layers structured with a simple architecture, 64, 32, 16, and 8 neurons, respectively. It was trained for 20 epochs, rather than 50, as longer training resulted in noticeable overfitting on the training data. Twenty epochs were selected because the accuracy and loss values on the validation data did not show significant improvement beyond this point. The testing data achieved a loss value of 0.25 and an accuracy of 0.90, which showed little significant improvement over many other optimization models.<br>
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Final%20Model%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Final%20Model%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Final%20Model%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Final Model Training Data" width="500">
