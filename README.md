@@ -27,13 +27,14 @@ The poorest performing optimizer for both validation and training data was Adagr
 
 
 ### Neurons
-
+Four different neural network architectures were used to evaluate and identify the best configuration of neurons in the hidden layers. The architecures tested were Simpler, Balanced, Deeper, and Inverted Pyramid. 
 
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Neurons%20Training%20Data.png?raw=true" alt="Accuracy vs Epoch Per Neurons Training Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Accuracy%20vs%20Epoch%20Per%20Neurons%20Validation%20Data.png?raw=true" alt="Accuracy vs Epoch Per Neurons Validation Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Neurons%20Training%20Data.png?raw=true" alt="Loss vs Epoch Per Neurons Training Data" width="500">
 <img src="https://github.com/cassidyschul/weather_prediction/blob/main/Plots/Loss%20vs%20Epoch%20Per%20Neurons%20Validation%20Data.png?raw=true" alt="Loss vs Epoch Per Neurons Validation Data" width="500">
 
+Among these distnict neural network architectures, the Simpler architecture achieved the highest accuracy with the lowest loss. In contrast, the Balanced architecture showed the next best performance, followed by the Inverted Pyramid, and finally, Deeper architrectures demonstrated lower accuracy with higher loss. Therefore, the Simpler architecture was selected for final optimization. 
 
 ### Activation Functions
 Four different activation functions were used to determine which would be the best. The activation functions used were ReLU, LeakyReLU, PReLU, Swish. <br>
